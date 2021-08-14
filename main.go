@@ -15,7 +15,7 @@ type Request struct {
 
 func main() {
 	r := gin.Default()
-	r.POST("/foo", func(c *gin.Context) {
+	r.POST("/", func(c *gin.Context) {
         var params Request
         c.BindJSON(&params)
         jsonResponse, err := run(params.RawTransactionHex)
