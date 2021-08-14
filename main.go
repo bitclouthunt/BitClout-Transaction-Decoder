@@ -43,7 +43,6 @@ func run(rawTxHex string) (string, error) {
     if err != nil {
         return "", errors.Wrap(err, "could not marshal to JSON")
     }
-
   
     return string(buf), err
 }
